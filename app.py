@@ -70,7 +70,6 @@ agent=create_sql_agent(
     agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION
 )
 
-agent.max_iterations = 10
 
 if "messages" not in st.session_state or st.sidebar.button("Clear message history"):
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
